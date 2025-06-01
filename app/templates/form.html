@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input</title>
+</head>
+<body>
+    <h2>Enter Text</h2>
+    <form method="post" action="/submit">
+        <input type="text" name="text_input" placeholder="Type something..." required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+        <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+</body>
+</html>
